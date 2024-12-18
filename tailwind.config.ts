@@ -59,7 +59,8 @@ export default {
   		animation: {
   			meteor: 'meteor 5s linear infinite',
   			grid: 'grid 15s linear infinite',
-  			'shiny-text': 'shiny-text 8s infinite'
+  			'shiny-text': 'shiny-text 8s infinite',
+  			pulse: 'pulse var(--duration) ease-out infinite'
   		},
   		keyframes: {
   			meteor: {
@@ -89,6 +90,14 @@ export default {
   				},
   				'30%, 60%': {
   					'background-position': 'calc(100% + var(--shiny-width)) 0'
+  				}
+  			},
+  			pulse: {
+  				'0%, 100%': {
+  					boxShadow: '0 0 0 0 var(--pulse-color)'
+  				},
+  				'50%': {
+  					boxShadow: '0 0 0 8px var(--pulse-color)'
   				}
   			}
   		}
