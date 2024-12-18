@@ -130,7 +130,7 @@ export default function Home() {
 <Meteors number={30} />
 
 
-<div className="relative flex h-[680px] w-full flex-col items-center justify-center overflow-hidden ">
+<div className="relative flex sm:h-[680px] h-[1090px] w-full flex-col items-center justify-center overflow-hidden ">
 <div className="z-10 flex  items-center justify-center">
 <Link href="/" className="flex-shrink-0">
               <Image
@@ -197,7 +197,8 @@ export default function Home() {
     <br />
     <br />
     
-
+    {/* /////////////////////////////////////////////////// */}
+    <div className="hidden md:block">
     <div className="absolute bottom-4 left-20 flex justify-center gap-4 shrink-0 max-w-full z-30 scale-60">
   <div  className="font-display text-left text-2xl  text-black dark:text-white md:text-3xl flex flex-col items-end">
     <div style={{ fontFamily: 'LongWeekend, sans-serif' }}>
@@ -226,7 +227,7 @@ export default function Home() {
   </div>
 
 
-    
+    <div className="flex flex-row space-x-4">
   <Link href="https://hcd.iiitd.ac.in/" className="flex items-center">
     <Image
       src="/logo/hcdlogo.png"
@@ -255,6 +256,63 @@ export default function Home() {
     />
   </Link>
 </div>
+
+</div>
+
+        {/* Portfolio destroys Mobile responsiveness */}
+      {/* i think simple grid /flex for images is better than portfolio for mobile */}
+   
+      
+</div>
+{/* ////////////////////////////////////////////// */}
+<div className="block md:hidden z-30">
+  <div className="font-display text-left text-2xl text-black dark:text-white md:text-3xl flex flex-col items-end">
+    <div style={{ fontFamily: 'LongWeekend, sans-serif' }}>
+      Venue: R&D, IIIT-Delhi <br /> 
+      Date: 4th - 5th January 2025 <br />
+      Time: 9:30am-5pm 
+    </div>
+    <div className="font-display text-right text-2xl text-black dark:text-white md:text-3xl flex flex-col items-end">
+      <div style={{ fontFamily: 'LongWeekend, sans-serif' }}>
+        Hosted with <br /> joint collaboration
+      </div>
+      <IconArrowNarrowRight stroke={4} className="mt-2" />
+    </div>
+  </div>
+
+  <div className="flex flex-row justify-center items-center space-x-4">
+    <Link href="https://hcd.iiitd.ac.in/" className="flex items-center">
+      <Image
+        src="/logo/hcdlogo.png"
+        alt="hcd logo"
+        width={50}
+        height={50}
+        style={{ objectFit: 'contain' }}
+      />
+    </Link>
+    <Link href="https://cdnm.iiitd.ac.in/" className="flex items-center">
+      <Image
+        src="/logo/cdnmlogo.jpeg"
+        alt="cdnm logo"
+        width={50}
+        height={50}
+        style={{ objectFit: 'contain' }}
+      />
+    </Link>
+    <Link href="https://iiitd.ac.in/" className="flex items-center">
+      <Image
+        src="/logo/iiitdlogo.png"
+        alt="iiitd logo"
+        width={50}
+        height={50}
+        style={{ objectFit: 'contain' }}
+      />
+    </Link>
+  </div>
+</div>
+
+
+
 
 
 
@@ -325,7 +383,31 @@ export default function Home() {
     <br />
     {/* <Bento/> */}
     {/* <ParallaxScroll images={images} /> */}
+    <div className="hidden md:block">
     <WobbleCardDemo/>
+    </div>
+    <div className="block md:hidden z-30">
+        <div  style={{ fontFamily: 'WeirdComic, sans-serif' }}  className="text-left text-center text-5xl text-pink-500">
+          1Pixel'25
+          </div> 
+         
+             <div
+           
+              className="group relative bg-transparent border border-purple-500 text-purple-500 rounded-lg overflow-hidden font-bold transform hover:-translate-y-1 transition duration-400"
+            >
+              
+               <iframe
+    className="w-full h-full pt-2"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.827615231125!2d77.26982302618208!3d28.544900738053585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3e45d85d3e3%3A0x691393414902968e!2sIIIT-Delhi%20R%26D%20Building!5e0!3m2!1sen!2sin!4v1726605696874!5m2!1sen!2sin"
+    width="400"
+    height="350"
+    style={{ border: 0 }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  />
+  </div>
+            </div>
 
 
 
@@ -334,6 +416,14 @@ export default function Home() {
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
       </footer> */}
       
+    </div>
+    <div className="block md:hidden z-30">
+    <div>          <div className="px-10 text-black">
+
+Department of Human Centered Design,IIIT-Delhi<br />
+New Delhi, Delhi 110020
+
+          </div></div>
     </div>
     </div>
   );
@@ -369,7 +459,7 @@ const images = [
 
 const WobbleCardDemo= () =>  {
   return (
-    <div className="py-10 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
+    <div className=" py-10 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
       <WobbleCard
         containerClassName="col-span-1 lg:col-span-2  h-full bg-purple-800 min-h-[500px] lg:min-h-[300px]"
         className=""
@@ -411,7 +501,7 @@ New Delhi, Delhi 110020
 </button></div> */}
 
       </WobbleCard>
-      <div className="col-span-1 rounded-2xl overflow-hidden border border-purple-500 border-opacity-70">
+      <div className=" col-span-1 rounded-2xl overflow-hidden border border-purple-500 border-opacity-70">
   <iframe
     className="w-full h-full"
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.827615231125!2d77.26982302618208!3d28.544900738053585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3e45d85d3e3%3A0x691393414902968e!2sIIIT-Delhi%20R%26D%20Building!5e0!3m2!1sen!2sin!4v1726605696874!5m2!1sen!2sin"
