@@ -22,7 +22,7 @@ export function Dock() {
     {
       title: "LinkedIn",
       icon: (
-        <IconBrandLinkedin className="h-full w-full text-black-500" />
+        <IconBrandLinkedin className="h-full w-full text-pink-500" />
       ),
       href: "https://in.linkedin.com/company/hcdiiitd",
     },
@@ -30,7 +30,7 @@ export function Dock() {
 
       title: "Twitter",
       icon: (
-        <IconBrandTwitter className="h-full w-full text-black-500" />
+        <IconBrandTwitter className="h-full w-full text-yellow-500" />
       ),
       href: "https://x.com/hcdiiitd?lang=en",
     },
@@ -38,7 +38,7 @@ export function Dock() {
     {
       title: "Facebook",
       icon: (
-        <IconBrandFacebook className="h-full w-full text-black-500" />
+        <IconBrandFacebook className="h-full w-full text-purple-500" />
       ),
       href: "https://www.facebook.com/hcdiiitd/",
     },
@@ -50,14 +50,14 @@ export function Dock() {
     {
       title: "Instagram",
       icon: (
-        <IconBrandInstagram className="h-full w-full text-black-500" />
+        <IconBrandInstagram className="h-full w-full text-pink-500" />
       ),
       href: "https://www.instagram.com/1px.descon/?hl=en",
     },
     {
       title: "Youtube",
       icon: (
-        <IconBrandYoutube className="h-full w-full text-black-500" />
+        <IconBrandYoutube className="h-full w-full text-yellow-500" />
       ),
       href: "https://www.youtube.com/channel/UCKnRN-9ht_uca8nIdhyTAtQ/videos",
     },

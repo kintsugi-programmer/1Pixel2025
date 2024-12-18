@@ -22,7 +22,7 @@ export const WobbleCard = ({
       <div className="absolute inset-0 bg-white/10 backdrop-blur-md"></div>
       <div
         className={cn(
-          "h-full px-4 sm:px-10 relative border border-purple-500/[0.7] rounded-2xl",
+          "h-full px-4 sm:px-10 relative border border-4 border-purple-500/[0.7] rounded-2xl",
           className
         )}
       >

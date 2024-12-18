@@ -127,9 +127,98 @@ export default function Home() {
 {/* <canvas id='fluid' className='w-screen h-screen z-2' />
 */}
 <canvas className='pointer-events-none fixed inset-0' id='canvas' />
-<Meteors number={30} />
+<Meteors number={60} />
 
-
+<div className="absolute bottom-0 right-2">  <Link href="https://hcd.iiitd.ac.in/" className="flex items-center">
+    <Image
+      src="/Layer_1.png"
+      alt="hcd logo"
+      width={200}
+      height={100}
+      style={{ objectFit: 'contain' }}
+    />
+  </Link></div>
+  <div className="absolute top-[180px] left-[300px]">  <Link href="https://hcd.iiitd.ac.in/" className="flex items-center">
+    <Image
+      src="/Layer_3.png"
+      alt="hcd logo"
+      width={150}
+      height={100}
+      style={{ objectFit: 'contain' }}
+    />
+  </Link></div>
+  <div className="absolute top-[230px] right-[300px]">  <Link href="https://hcd.iiitd.ac.in/" className="flex items-center">
+    <Image
+      src="/Layer_2.png"
+      alt="hcd logo"
+      width={150}
+      height={100}
+      style={{ objectFit: 'contain' }}
+    />
+  </Link></div>
+  <div className="absolute top-[740px] right-[30px]">  <Link href="https://hcd.iiitd.ac.in/" className="flex items-center">
+    <Image
+      src="/Layer_4.png"
+      alt="hcd logo"
+      width={500}
+      height={100}
+      style={{ objectFit: 'contain' }}
+    />
+  </Link></div>
+  <div className="absolute top-[1260px] left-[30px]">  <Link href="https://hcd.iiitd.ac.in/" className="flex items-center">
+    <Image
+      src="/Layer_7.png"
+      alt="hcd logo"
+      width={400}
+      height={100}
+      style={{ objectFit: 'contain' }}
+    />
+  </Link></div>
+  <div className="absolute top-[2100px] left-[90px]">  <Link href="https://hcd.iiitd.ac.in/" className="flex items-center">
+    <Image
+      src="/Layer_4.png"
+      alt="hcd logo"
+      width={350}
+      height={100}
+      style={{ objectFit: 'contain' }}
+    />
+  </Link></div>
+  <div className="absolute top-[1800px] right-[90px]">  <Link href="https://hcd.iiitd.ac.in/" className="flex items-center">
+    <Image
+      src="/Layer_5.png"
+      alt="hcd logo"
+      width={350}
+      height={100}
+      style={{ objectFit: 'contain' }}
+    />
+  </Link></div>
+  <div className="absolute top-[1700px] left-[2px]">  <Link href="https://hcd.iiitd.ac.in/" className="flex items-center">
+    <Image
+      src="/Layer_6.png"
+      alt="hcd logo"
+      width={150}
+      height={100}
+      style={{ objectFit: 'contain' }}
+    />
+  </Link></div>
+  <div className="absolute top-[2400px] left-[100px]">  <Link href="https://hcd.iiitd.ac.in/" className="flex items-center">
+    <Image
+      src="/Layer_7.png"
+      alt="hcd logo"
+      width={350}
+      height={100}
+      style={{ objectFit: 'contain' }}
+    />
+  </Link></div>
+  <div className="absolute top-[2100px] right-[90px]">  <Link href="https://hcd.iiitd.ac.in/" className="flex items-center">
+    <Image
+      src="/Layer_8.png"
+      alt="hcd logo"
+      width={150}
+      height={100}
+      style={{ objectFit: 'contain' }}
+    />
+  </Link></div>
 <div className="relative flex sm:h-[680px] h-[1090px] w-full flex-col items-center justify-center overflow-hidden ">
 <div className="z-10 flex  items-center justify-center">
 <Link href="/" className="flex-shrink-0">
@@ -146,9 +235,10 @@ export default function Home() {
      
     </div>
   
-      <span className="pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff]  bg-clip-text text-center text-6xl sm:text-9xl leading-none  text-transparent" style={{ fontFamily: 'WeirdComic, sans-serif' }} >
+      <span className="pointer-events-none z-10 whitespace-pre-wrap  bg-clip-text bg-[#ff2975]  text-center text-6xl sm:text-9xl leading-none  text-transparent" style={{ fontFamily: 'WeirdComic, sans-serif' }} >
         1Pixel'25
       </span>
+      {/*  bg-gradient-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff] */}
           {/* <div>
       <h1 style={{ fontFamily: 'WeirdComic, sans-serif' }}>This is a Sample Heading</h1>
       <p style={{ fontFamily: 'WeirdComic, sans-serif' }}>
@@ -188,7 +278,7 @@ export default function Home() {
       
       
     </div>
-    <Link href="/" style={{ fontFamily: 'LongWeekend, sans-serif' }} className="pt-3 x-40 ">
+    <Link href="/" style={{ fontFamily: 'LongWeekend, sans-serif' }} className="pt-3 z-40 ">
     <PulsatingButton className="flex items-center">
   ✨ Early Bid 20% Discount →
 </PulsatingButton>
@@ -350,17 +440,35 @@ export default function Home() {
     />
   </Link>
   {/* Content above image */}
-  <p className="z-[50] pt-2 whitespace-pre-wrap text-center text-6xl font-medium tracking-tighter text-purple" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
+  {/* <p className="z-[50] pt-2 whitespace-pre-wrap text-center text-6xl font-medium tracking-tighter text-purple" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
     Adobe
 
-  </p>
-  <div className=" bg-gradient-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff]  bg-clip-text"></div>
-  <p className="z-[50] whitespace-pre-wrap text-center text-4xl font-medium tracking-tighter  " style={{ fontFamily: 'LongWeekend, sans-serif' }}>
+  </p> */}
+  {/* <div className=" bg-gradient-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff]  bg-clip-text"></div> */}
+  {/* <p className="z-[50] whitespace-pre-wrap text-center text-4xl font-medium tracking-tighter  " style={{ fontFamily: 'LongWeekend, sans-serif' }}>
 
   ✨Platinum Partner ✨
-  </p>
+  </p> */}
+  <div className="pt-2 x-40"></div>
+  <div
+        className={cn(
+          "group rounded-full border border-black/5 x-40  bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800",
+        )}
+      >
+  <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+          <span>✨ Platinum Partner</span>  
+        </AnimatedShinyText>
+        </div>
+        <Link href="/" style={{ fontFamily: 'LongWeekend, sans-serif' }} className="absolute bottom-5 x-40 ">
+    <PulsatingButton className="flex items-center">
+  Call For Sponsors →
+</PulsatingButton>
+</Link>
   <Ripple />
+  
 </div>
+
+
 
 
 
@@ -371,6 +479,7 @@ export default function Home() {
         Get the best advices from our experts, including expert artists,
         painters, marathon enthusiasts and RDX, totally free.
       </p> */}
+      
     <WordRotate
       className=" font-display text-center text-4xl font-bold tracking-[-0.02em] drop-shadow-sm md:text-7xl md:leading-[5rem] text-4xl  pt-10  font-bold text-black dark:text-white"
       words={["Legacy", "Memories" ,"Learnings"]}
@@ -501,7 +610,7 @@ New Delhi, Delhi 110020
 </button></div> */}
 
       </WobbleCard>
-      <div className=" col-span-1 rounded-2xl overflow-hidden border border-purple-500 border-opacity-70">
+      <div className=" col-span-1 rounded-2xl overflow-hidden border border-4 border-yellow-500 border-opacity-70">
   <iframe
     className="w-full h-full"
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.827615231125!2d77.26982302618208!3d28.544900738053585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3e45d85d3e3%3A0x691393414902968e!2sIIIT-Delhi%20R%26D%20Building!5e0!3m2!1sen!2sin!4v1726605696874!5m2!1sen!2sin"

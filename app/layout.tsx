@@ -17,10 +17,10 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased">
         {/* Responsive Navbar */}
-        <div className="w-full px-5 py-3 md:px-10 md:py-5 flex justify-between items-center">
-          {/* Add more divbar content here */}
+        {/* <div className="w-full px-5 py-3 md:px-10 md:py-5 flex justify-between items-center">
+
           <Nav />
-        </div>
+        </div> */}
         {children}
         <div className="w-full fixed bottom-5 left-0 z-10"><Dock /></div>
       </body>
