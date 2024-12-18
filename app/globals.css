@@ -1,6 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'WeirdComic';
+  src: url('/weird_comic/WeirdComic-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'WeirdComic';
+  src: url('/weird_comic/WeirdComic-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+body {
+  font-family: 'WeirdComic', sans-serif;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
