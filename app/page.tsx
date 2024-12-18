@@ -29,7 +29,7 @@ import {
   IconTableColumn,
 } from "@tabler/icons-react";
 
-export function BentoGridDemo() {
+const Bento = () => {
   return (
     <BentoGrid className="max-w-4xl mx-auto">
       {items.map((item, i) => (
@@ -95,7 +95,7 @@ const items = [
 ];
 
 
-export function MeteorDemo() {
+const MeteorDemo = () => {
   
 
   return (
@@ -129,20 +129,21 @@ export default function Home() {
 
 <div className="relative flex h-[680px] w-full flex-col items-center justify-center overflow-hidden ">
 <div className="z-10 flex  items-center justify-center">
-      <div
-        className={cn(
-          "group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800",
-        )}
-      >
-        <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-          <span>✨ Early Bid 20% Discount</span>    <div className="ml-1  transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" ><IconArrowNarrowRight stroke={2} /></div>
-        </AnimatedShinyText>
-    
-
-      </div>
+<Link href="/" className="flex-shrink-0">
+              <Image
+                src="/logo/logo1.png"
+                alt="logo"
+                width={200}
+                height={200}
+                style={{ objectFit: 'contain' }}
+              />
+              
+                   
+          </Link>
+     
     </div>
   
-      <span className="pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b  from-[#ff2975] to-[#8c1eff] bg-clip-text text-center text-6xl sm:text-9xl leading-none  text-transparent" style={{ fontFamily: 'WeirdComic, sans-serif' }} >
+      <span className="pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff]  bg-clip-text text-center text-6xl sm:text-9xl leading-none  text-transparent" style={{ fontFamily: 'WeirdComic, sans-serif' }} >
         1Pixel'25
       </span>
           {/* <div>
@@ -166,9 +167,24 @@ export default function Home() {
       <div>          <Link href="/" >
       <ShinyButton>Explore More</ShinyButton>    
           </Link></div>
+          <div
+        className={cn(
+          "group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800",
+        )}
+      >
+        
+        <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+          <span>✨ Early Bid 20% Discount</span>    <div className="ml-1  transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" ><IconArrowNarrowRight stroke={2} /></div>
+        </AnimatedShinyText>
+    
+
+      </div>
       
       
     </div>
+    <br />
+    <br />
+    <br />
     
 
     <div className="absolute bottom-4 left-20 flex justify-center gap-4 shrink-0 max-w-full z-30 scale-60">
@@ -257,7 +273,7 @@ export default function Home() {
     /> */}
     <ParallaxScroll images={images}  /></div>
     <br />
-    <BentoGridDemo/>
+    <Bento/>
     {/* <ParallaxScroll images={images} /> */}
     <WobbleCardDemo/>
 
