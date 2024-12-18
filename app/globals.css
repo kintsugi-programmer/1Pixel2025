@@ -9,6 +9,14 @@
   font-style: normal;
 }
 
+
+@font-face {
+  font-family: 'tton';
+  src: url('/twelve_ton_goldfish/12ton.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'WeirdComic';
   src: url('/weird_comic/WeirdComic-Italic.ttf') format('truetype');
@@ -23,7 +31,7 @@
   font-style: normal;
 }
 body {
-  font-family: 'WeirdComic', sans-serif;
+  font-family: 'tton', sans-serif;
 }
 
 @layer base {

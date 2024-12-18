@@ -157,7 +157,7 @@ export default function Home() {
         sit amet consectetur libero velit sed odio.
       </p>
     </div> */}
-      <div className="z-10 max-w-5xl mx-auto px-4 w-full text-center">
+      <div className="z-10 max-w-5xl mx-auto px-4 w-full text-center" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
       Welcome to the 3rd Edition of 1-Pixel Design Conference 2025, North India's largest student-led design event, hosted by IIIT-Delhi. <br />Join visionaries, industry leaders, and design enthusiasts for two days of innovation, insights, and collaborative learning. Explore the latest trends, engage in hands-on workshops, and connect with a dynamic community of designers.
       </div>
       {/* <WordPullUp
@@ -418,7 +418,7 @@ export default function Home() {
       
     </div>
     <div className="block md:hidden z-30">
-    <div>          <div className="px-10 text-black">
+    <div>          <div className="px-10 text-black" style={{ fontFamily: 'tton' }}>
 
 Department of Human Centered Design,IIIT-Delhi<br />
 New Delhi, Delhi 110020
@@ -468,7 +468,7 @@ const WobbleCardDemo= () =>  {
           <h2  style={{ fontFamily: 'WeirdComic, sans-serif' }}  className="text-left text-balance text-base md:text-xl lg:text-3xl  text-pink-500">
           1Pixel'25
           </h2>
-          <p className="mt-4 text-left  text-base/6 text-black">
+          <p className="mt-4 text-left  text-base/6 text-black" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
 
 Department of Human Centered Design, <br />
 Indraprastha Institute of Information Technology Delhi (IIIT-Delhi) ,<br />
