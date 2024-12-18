@@ -2,6 +2,7 @@
 import Link from "next/link";
 import WobbleCard from "@/components/wobble-card";
 import Image from "next/image";
+import Ripple from "@/components/ui/ripple";
 import { IconArrowNarrowRight } from '@tabler/icons-react';
 import { cn } from "@/lib/utils";
 import AnimatedShinyText from "@/components/ui/animated-shiny-text";
@@ -18,6 +19,7 @@ import { VelocityScroll } from "@/components/ui/scroll-based-velocity";
 import InteractiveHoverButton from "@/components/ui/interactive-hover-button";
 import WordRotate from "@/components/ui/word-rotate";
 import Meteors from "@/components/ui/meteors";
+import { BackgroundLines } from "@/components/ui/background-lines";
 import PulsatingButton from "@/components/ui/pulsating-button";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import {
@@ -271,7 +273,46 @@ export default function Home() {
       
       className="font-display text-center text-4xl font-bold tracking-[-0.02em] text-black drop-shadow-sm dark:text-white md:text-7xl md:leading-[5rem]"
     /></div>
+    
     <div>
+    <WordRotate
+      className=" font-display text-center text-4xl font-bold tracking-[-0.02em] drop-shadow-sm md:text-7xl md:leading-[5rem] text-4xl  pt-10  font-bold text-black dark:text-white"
+      words={["Sponsors", "Stakeholders" ,"Endorsers","Backers"]}
+    />
+<div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
+  {/* Ensure z-index for the image is higher */}
+  <Link href="https://www.adobe.com/" className="flex-shrink-0 z-[60]">
+    <Image
+      src="/spons/adobe.png"
+      alt="logo"
+      width={400}
+      height={400}
+      className="rounded-2xl opacity-100"
+      style={{ objectFit: 'contain' }}
+    />
+  </Link>
+  {/* Content above image */}
+  <p className="z-[50] pt-2 whitespace-pre-wrap text-center text-6xl font-medium tracking-tighter text-purple" style={{ fontFamily: 'LongWeekend, sans-serif' }}>
+    Adobe
+
+  </p>
+  <div className=" bg-gradient-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff]  bg-clip-text"></div>
+  <p className="z-[50] whitespace-pre-wrap text-center text-4xl font-medium tracking-tighter  " style={{ fontFamily: 'LongWeekend, sans-serif' }}>
+
+  ✨Platinum Partner ✨
+  </p>
+  <Ripple />
+</div>
+
+
+
+      {/* <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
+        Sanjana Airlines, <br /> Sajana Textiles.
+      </h2>
+      <p className="max-w-xl mx-auto text-sm md:text-lg text-neutral-700 dark:text-neutral-400 text-center">
+        Get the best advices from our experts, including expert artists,
+        painters, marathon enthusiasts and RDX, totally free.
+      </p> */}
     <WordRotate
       className=" font-display text-center text-4xl font-bold tracking-[-0.02em] drop-shadow-sm md:text-7xl md:leading-[5rem] text-4xl  pt-10  font-bold text-black dark:text-white"
       words={["Legacy", "Memories" ,"Learnings"]}

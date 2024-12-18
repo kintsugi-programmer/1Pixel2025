@@ -60,7 +60,8 @@ export default {
   			meteor: 'meteor 5s linear infinite',
   			grid: 'grid 15s linear infinite',
   			'shiny-text': 'shiny-text 8s infinite',
-  			pulse: 'pulse var(--duration) ease-out infinite'
+  			pulse: 'pulse var(--duration) ease-out infinite',
+  			ripple: 'ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite'
   		},
   		keyframes: {
   			meteor: {
@@ -98,6 +99,14 @@ export default {
   				},
   				'50%': {
   					boxShadow: '0 0 0 8px var(--pulse-color)'
+  				}
+  			},
+  			ripple: {
+  				'0%, 100%': {
+  					transform: 'translate(-50%, -50%) scale(1)'
+  				},
+  				'50%': {
+  					transform: 'translate(-50%, -50%) scale(0.9)'
   				}
   			}
   		}
