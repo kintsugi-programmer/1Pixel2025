@@ -129,7 +129,7 @@ export default function Home() {
 <canvas className='pointer-events-none fixed inset-0' id='canvas' />
 <Meteors number={60} />
 
-<div className="absolute bottom-0 right-2">  <Link href="https://hcd.iiitd.ac.in/" className="flex items-center">
+<div className="absolute bottom-0 right-2">  
     <Image
       src="/Layer_1.png"
       alt="hcd logo"
@@ -137,8 +137,8 @@ export default function Home() {
       height={100}
       style={{ objectFit: 'contain' }}
     />
-  </Link></div>
-  <div className="absolute top-[180px] left-[300px]">  <Link href="https://hcd.iiitd.ac.in/" className="flex items-center">
+ </div>
+  <div className="absolute top-[180px] left-[300px]">  
     <Image
       src="/Layer_3.png"
       alt="hcd logo"
@@ -146,8 +146,8 @@ export default function Home() {
       height={100}
       style={{ objectFit: 'contain' }}
     />
-  </Link></div>
-  <div className="absolute top-[230px] right-[300px]">  <Link href="https://hcd.iiitd.ac.in/" className="flex items-center">
+ </div>
+  <div className="absolute top-[230px] right-[300px]">  
     <Image
       src="/Layer_2.png"
       alt="hcd logo"
@@ -155,8 +155,8 @@ export default function Home() {
       height={100}
       style={{ objectFit: 'contain' }}
     />
-  </Link></div>
-  <div className="absolute top-[740px] right-[30px]">  <Link href="https://hcd.iiitd.ac.in/" className="flex items-center">
+ </div>
+  <div className="absolute top-[740px] right-[30px]">  
     <Image
       src="/Layer_4.png"
       alt="hcd logo"
@@ -164,8 +164,8 @@ export default function Home() {
       height={100}
       style={{ objectFit: 'contain' }}
     />
-  </Link></div>
-  <div className="absolute top-[1260px] left-[30px]">  <Link href="https://hcd.iiitd.ac.in/" className="flex items-center">
+ </div>
+  <div className="absolute top-[1260px] left-[30px]">  
     <Image
       src="/Layer_7.png"
       alt="hcd logo"
@@ -173,8 +173,8 @@ export default function Home() {
       height={100}
       style={{ objectFit: 'contain' }}
     />
-  </Link></div>
-  <div className="absolute top-[2100px] left-[90px]">  <Link href="https://hcd.iiitd.ac.in/" className="flex items-center">
+ </div>
+  <div className="absolute top-[2100px] left-[90px]">  
     <Image
       src="/Layer_4.png"
       alt="hcd logo"
@@ -182,8 +182,8 @@ export default function Home() {
       height={100}
       style={{ objectFit: 'contain' }}
     />
-  </Link></div>
-  <div className="absolute top-[1800px] right-[90px]">  <Link href="https://hcd.iiitd.ac.in/" className="flex items-center">
+ </div>
+  <div className="absolute top-[1800px] right-[90px]">  
     <Image
       src="/Layer_5.png"
       alt="hcd logo"
@@ -191,8 +191,8 @@ export default function Home() {
       height={100}
       style={{ objectFit: 'contain' }}
     />
-  </Link></div>
-  <div className="absolute top-[1700px] left-[2px]">  <Link href="https://hcd.iiitd.ac.in/" className="flex items-center">
+ </div>
+  <div className="absolute top-[1700px] left-[2px]">  
     <Image
       src="/Layer_6.png"
       alt="hcd logo"
@@ -200,8 +200,8 @@ export default function Home() {
       height={100}
       style={{ objectFit: 'contain' }}
     />
-  </Link></div>
-  <div className="absolute top-[2400px] left-[100px]">  <Link href="https://hcd.iiitd.ac.in/" className="flex items-center">
+ </div>
+  <div className="absolute top-[2400px] left-[100px]">  
     <Image
       src="/Layer_7.png"
       alt="hcd logo"
@@ -209,8 +209,8 @@ export default function Home() {
       height={100}
       style={{ objectFit: 'contain' }}
     />
-  </Link></div>
-  <div className="absolute top-[2100px] right-[90px]">  <Link href="https://hcd.iiitd.ac.in/" className="flex items-center">
+ </div>
+  <div className="absolute top-[2100px] right-[90px]">  
     <Image
       src="/Layer_8.png"
       alt="hcd logo"
@@ -218,7 +218,7 @@ export default function Home() {
       height={100}
       style={{ objectFit: 'contain' }}
     />
-  </Link></div>
+ </div>
 <div className="relative flex sm:h-[680px] h-[1090px] w-full flex-col items-center justify-center overflow-hidden ">
 <div className="z-10 flex  items-center justify-center">
 <Link href="/" className="flex-shrink-0">
