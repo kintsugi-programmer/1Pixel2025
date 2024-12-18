@@ -282,7 +282,7 @@ export default function Home() {
     /> */}
     <ParallaxScroll images={images}  /></div>
     <br />
-    <Bento/>
+    {/* <Bento/> */}
     {/* <ParallaxScroll images={images} /> */}
     <WobbleCardDemo/>
 
