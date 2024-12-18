@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-
+import Image from "next/image";
 export function Nav() {
   return (
     <div className="relative w-full flex items-center justify-center">
@@ -19,12 +19,20 @@ function Navbar({ className }: { className?: string }) {
   const toggleMenu = () => setMenuOpen(!menuOpen);  // Function to toggle menu visibility
 
   return (
-    <div className={cn("fixed top-10 py-5 inset-x-4  max-w-2xl mx-auto z-50", className)}>
+    <div className={cn("fixed top-10 py-3 inset-x-4  max-w-2xl mx-auto z-50", className)}>
       <Menu setActive={setActive}>
         <div className="w-full flex justify-between items-center">
           {/* Logo on the left */}
           <Link href="/" className="flex-shrink-0">
-            <p className="font-bold">&gt;1Pixel'25</p>        
+              <Image
+                src="/logo/logo.png"
+                alt="logo"
+                width={40}
+                height={40}
+                style={{ objectFit: 'contain' }}
+              />
+              
+                   
           </Link>
 
           {/* Hamburger Icon for small screens */}
@@ -32,23 +40,23 @@ function Navbar({ className }: { className?: string }) {
           <MenuItem setActive={setActive} active={active} item="☰">
               <div className="flex flex-col space-y-4 text-sm">
                 
-                <HoveredLink href="/web-dev">Web Development</HoveredLink>
-                <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-                <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-                <HoveredLink href="/branding">Branding</HoveredLink>
+                <HoveredLink href="/web-dev">Demo1</HoveredLink>
+                <HoveredLink href="/interface-design">Demo2</HoveredLink>
+                <HoveredLink href="/seo">Demo3</HoveredLink>
+                <HoveredLink href="/branding">Demo4</HoveredLink>
               </div>
             </MenuItem>
           </div>
 
           {/* Menu items grouped on the right */}
           <div className={`flex items-center gap-6 ${menuOpen ? 'flex-col absolute bg-white top-16 left-4 right-4 p-6' : 'hidden lg:flex'}`}>
-            <MenuItem setActive={setActive} active={active} item="Services">
+            <MenuItem setActive={setActive} active={active} item="More">
             
               <div className="flex flex-col space-y-4 text-sm">
-                <HoveredLink href="/web-dev">Web Development</HoveredLink>
-                <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-                <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-                <HoveredLink href="/branding">Branding</HoveredLink>
+                <HoveredLink href="/web-dev">Demo1</HoveredLink>
+                <HoveredLink href="/interface-design">Demo2</HoveredLink>
+                <HoveredLink href="/seo">Demo3</HoveredLink>
+                <HoveredLink href="/Demo4">Branding</HoveredLink>
               </div>
             </MenuItem>
             {/* 

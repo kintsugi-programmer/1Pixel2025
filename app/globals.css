@@ -16,6 +16,12 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'LongWeekend';
+  src: url('/long_weekend/Long Weekend.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   font-family: 'WeirdComic', sans-serif;
 }

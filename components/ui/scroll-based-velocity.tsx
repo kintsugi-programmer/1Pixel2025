@@ -93,6 +93,7 @@ export function VelocityScroll({
       <div
         className="w-full overflow-hidden whitespace-nowrap"
         ref={containerRef}
+        style={{ fontFamily: 'LongWeekend, sans-serif' }}
       >
         <motion.div className={cn("inline-block", className)} style={{ x }}>
           {Array.from({ length: repetitions }).map((_, i) => (

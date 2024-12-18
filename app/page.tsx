@@ -142,7 +142,7 @@ export default function Home() {
       </div>
     </div>
   
-      <span className="pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-[#ffd319] from-[#ff2975] to-[#8c1eff] bg-clip-text text-center text-6xl sm:text-9xl leading-none  text-transparent" style={{ fontFamily: 'WeirdComic, sans-serif' }} >
+      <span className="pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b  from-[#ff2975] to-[#8c1eff] bg-clip-text text-center text-6xl sm:text-9xl leading-none  text-transparent" style={{ fontFamily: 'WeirdComic, sans-serif' }} >
         1Pixel'25
       </span>
           {/* <div>
@@ -172,8 +172,8 @@ export default function Home() {
     
 
     <div className="absolute bottom-4 left-20 flex justify-center gap-4 shrink-0 max-w-full z-30 scale-60">
-  <div className="font-display text-left text-2xl font-bold -tracking-widest text-black dark:text-white md:text-3xl flex flex-col items-end">
-    <div>
+  <div  className="font-display text-left text-2xl  text-black dark:text-white md:text-3xl flex flex-col items-end">
+    <div style={{ fontFamily: 'LongWeekend, sans-serif' }}>
       Venue: R&D, IIIT-Delhi <br /> 
       Date: 4th - 5th January 2025 <br />
       Time: 9:30am-5pm 
@@ -185,8 +185,8 @@ export default function Home() {
   </div>
   </div>
     <div className="absolute bottom-4 right-20 flex justify-center gap-4 shrink-0 max-w-full z-30 scale-60">
-  <div className="font-display text-right text-2xl font-bold -tracking-widest text-black dark:text-white md:text-3xl flex flex-col items-end">
-    <div>
+  <div className="font-display text-right text-2xl  text-black dark:text-white md:text-3xl flex flex-col items-end">
+    <div style={{ fontFamily: 'LongWeekend, sans-serif' }}>
       
       Hosted with <br /> joint collaboration
     </div>
@@ -243,6 +243,7 @@ export default function Home() {
       <VelocityScroll
       text="1Pixel 1Pixel 1Pixel 1Pixel "
       default_velocity={3}
+      
       className="font-display text-center text-4xl font-bold tracking-[-0.02em] text-black drop-shadow-sm dark:text-white md:text-7xl md:leading-[5rem]"
     /></div>
     <div>
@@ -308,7 +309,7 @@ const WobbleCardDemo= () =>  {
         className=""
       >        {/* added padding py-20 .its forced */}
         <div className="max-w-md pt-10">
-          <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-pink-500">
+          <h2  style={{ fontFamily: 'WeirdComic, sans-serif' }}  className="text-left text-balance text-base md:text-xl lg:text-3xl  text-pink-500">
           1Pixel'25
           </h2>
           <p className="mt-4 text-left  text-base/6 text-black">
