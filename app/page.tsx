@@ -9,6 +9,7 @@ import { useEffect } from 'react';
 import ShinyButton from "@/components/ui/shiny-button";
 import useFluidCursor from "@/components/cursor";
 import WordPullUp from "@/components/ui/word-pull-up";
+import GradualSpacing from "@/components/ui/gradual-spacing";
 
 import useCanvasCursor from "@/components/cursor";
 
@@ -50,7 +51,7 @@ export default function Home() {
 <Meteors number={30} />
 
 
-<div className="relative flex h-[650px] w-full flex-col items-center justify-center overflow-hidden ">
+<div className="relative flex h-[680px] w-full flex-col items-center justify-center overflow-hidden ">
 <div className="z-10 flex  items-center justify-center">
       <div
         className={cn(
@@ -67,8 +68,8 @@ export default function Home() {
       <span className="pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff] bg-clip-text text-center text-6xl sm:text-9xl font-bold leading-none tracking-tighter text-transparent">
         1Pixel'25
       </span>
-      <div className="z-10 max-w-4xl mx-auto px-4 w-full text-center">
-      Welcome to the 1-Pixel Design Conference 2025, North India's largest student-led design event, hosted by IIIT-Delhi. Join visionaries, industry leaders, and design enthusiasts for two days of innovation, insights, and collaborative learning. Explore the latest trends, engage in hands-on workshops, and connect with a dynamic community of designers.
+      <div className="z-10 max-w-5xl mx-auto px-4 w-full text-center">
+      Welcome to the 3rd Edition of 1-Pixel Design Conference 2025, North India's largest student-led design event, hosted by IIIT-Delhi. <br />Join visionaries, industry leaders, and design enthusiasts for two days of innovation, insights, and collaborative learning. Explore the latest trends, engage in hands-on workshops, and connect with a dynamic community of designers.
       </div>
       {/* <WordPullUp
       className="text-sm py-0 px-20 font-bold tracking-[-0.02em] text-black dark:text-white md:text-xl md:leading-[5rem]"
@@ -83,6 +84,67 @@ export default function Home() {
       
       
     </div>
+    
+
+    <div className="absolute bottom-4 left-20 flex justify-center gap-4 shrink-0 max-w-full z-30 scale-60">
+  <div className="font-display text-left text-2xl font-bold -tracking-widest text-black dark:text-white md:text-3xl flex flex-col items-end">
+    <div>
+      Venue: R&D, IIIT-Delhi <br /> 
+      Date: 4th - 5th January 2025 <br />
+      Time: 10am-4pm 
+    </div>
+    
+
+
+    
+  </div>
+  </div>
+    <div className="absolute bottom-4 right-20 flex justify-center gap-4 shrink-0 max-w-full z-30 scale-60">
+  <div className="font-display text-right text-2xl font-bold -tracking-widest text-black dark:text-white md:text-3xl flex flex-col items-end">
+    <div>
+      
+      Hosted with <br /> joint collaboration
+    </div>
+    
+    <IconArrowNarrowRight stroke={4} className="mt-2" />
+
+
+
+    
+  </div>
+
+
+    
+  <Link href="https://hcd.iiitd.ac.in/" className="flex items-center">
+    <Image
+      src="/logo/hcdlogo.png"
+      alt="hcd logo"
+      width={100}
+      height={100}
+      style={{ objectFit: 'contain' }}
+    />
+  </Link>
+  <Link href="https://cdnm.iiitd.ac.in/" className="flex items-center">
+    <Image
+      src="/logo/cdnmlogo.jpeg"
+      alt="cdnm logo"
+      width={100}
+      height={100}
+      style={{ objectFit: 'contain' }}
+    />
+  </Link>
+  <Link href="https://iiitd.ac.in/" className="flex items-center">
+    <Image
+      src="/logo/iiitdlogo.png"
+      alt="iiitd logo"
+      width={100}
+      height={100}
+      style={{ objectFit: 'contain' }}
+    />
+  </Link>
+</div>
+
+
 
       <RetroGrid />
     </div>

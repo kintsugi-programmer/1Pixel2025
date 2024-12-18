@@ -2,9 +2,13 @@ import React from "react";
 import { FloatingDock } from "./ui/floating-dock";
 import {
   IconBrandBehance,
+  IconBrandFacebook,
   IconBrandGithub,
+  IconBrandInstagram,
   IconBrandLinkedin,
+  IconBrandTwitter,
   IconBrandX,
+  IconBrandYoutube,
   IconExchange,
   IconHome,
   IconNews,
@@ -16,49 +20,46 @@ import Image from "next/image";
 export function Dock() {
   const links = [
     {
-      title: "Home",
-      icon: (
-        <IconHome className="h-full w-full text-black-500" />
-      ),
-      href: "#",
-    },
-
-    {
-      title: "About Me",
-      icon: (
-        <IconTerminal2 className="h-full w-full text-black-500" />
-      ),
-      href: "https://kintsugi-programmer.github.io/about.html",
-    },
-    {
-      title: "Blogs",
-      icon: (
-        <IconNews className="h-full w-full text-black-500" />
-      ),
-      href: "https://kintsugicodes.hashnode.dev/",
-    },
-
-    {
       title: "LinkedIn",
       icon: (
         <IconBrandLinkedin className="h-full w-full text-black-500" />
       ),
-      href: "https://www.linkedin.com/in/kintsugi-programmer/",
+      href: "https://in.linkedin.com/company/hcdiiitd",
+    },
+    {
+
+      title: "Twitter",
+      icon: (
+        <IconBrandTwitter className="h-full w-full text-black-500" />
+      ),
+      href: "https://x.com/hcdiiitd?lang=en",
     },
 
     {
-      title: "Behance",
+      title: "Facebook",
       icon: (
-        <IconBrandBehance className="h-full w-full text-black-500" />
+        <IconBrandFacebook className="h-full w-full text-black-500" />
       ),
-      href: "https://www.behance.net/balibhai",
+      href: "https://www.facebook.com/hcdiiitd/",
+    },
+
+
+
+
+
+    {
+      title: "Instagram",
+      icon: (
+        <IconBrandInstagram className="h-full w-full text-black-500" />
+      ),
+      href: "https://www.instagram.com/1px.descon/?hl=en",
     },
     {
-      title: "GitHub",
+      title: "Youtube",
       icon: (
-        <IconBrandGithub className="h-full w-full text-black-500" />
+        <IconBrandYoutube className="h-full w-full text-black-500" />
       ),
-      href: "https://github.com/kintsugi-programmer",
+      href: "https://www.youtube.com/channel/UCKnRN-9ht_uca8nIdhyTAtQ/videos",
     },
   ];
   return (
