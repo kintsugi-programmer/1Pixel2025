@@ -345,7 +345,7 @@ const images = [
   "/images/22.png",
   "/images/23.png",
   "/images/24.png",
-  "/images/25.jpg",
+  "/images/25.png",
   "/images/1.png",
   "/images/2.png",
   "/images/3.png",
